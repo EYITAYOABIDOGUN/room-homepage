@@ -11,17 +11,17 @@
   --VeryDarkGray: hsl(0, 0%, 27%);
 }
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "League Spartan", sans-serif;
   color: var(--black);
 }
 h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "League Spartan", sans-serif;
   color: var(--black);
   letter-spacing: 8px;
   font-size: 12px;
 }
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "League Spartan", sans-serif;
   color: var(--DarkGray);
   font-size: 12px;
 }
@@ -29,13 +29,20 @@ p {
 .header {
   position: absolute;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
   color: white;
+}
+li {
+  font-size: 15px;
+  font-weight: 100;
+  font-family: "League Spartan", sans-serif;
 }
 ul {
   display: flex;
   list-style-type: none;
   margin: 20px;
+  padding-top: 10px;
 }
 
 a {
@@ -54,9 +61,15 @@ a:hover {
   flex-direction: column;
 }
 .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
   margin: 20px;
-  margin-top: 25px;
+  margin-top: 30px;
   margin-left: 25px;
+  width: 90px;
 }
 section {
   display: flex;
@@ -65,21 +78,37 @@ section {
   height: 450px;
 }
 
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  width: 1000px;
+}
+.mySlides {
+  display: none;
+}
 .slide {
-  width: 760px;
   height: 450px;
 }
+
+.sect2 {
+  width: 50%;
+  height: 450px;
+}
+
 .text1 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin: 90px;
 }
+
 #middletext {
   margin-top: 15px;
 }
 #shop {
-  color: var(--black);
+  color: var(--VeryDarkGray);
   font-size: 12px;
   letter-spacing: 10px;
   margin: 0px;
@@ -87,13 +116,14 @@ section {
 #shop:hover {
   text-decoration: none;
 }
-
+#shoping {
+  margin-top: 25px;
+}
 .direction {
   display: flex;
   background-color: black;
-  position: relative;
-  top: 98px;
-  right: 90px;
+  position: absolute;
+  top: 380px;
   width: 131px;
 }
 .left {
@@ -120,131 +150,15 @@ section {
 }
 #imgs {
   width: 420px;
-  height: 230px;
+  height: 100%;
+}
+#imags {
+  width: 485px;
+  height: 100%;
 }
 .text2 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin: 30px;
-  /* font-size: 12px; */
-}
-@media (min-width: 641px) {
-  .direction1 {
-    display: none;
-  }
-  .dropdown-btn {
-    display: none;
-  }
-  .content {
-    display: none;
-  }
-}
-@media (max-width: 640px) {
-  section {
-    display: flex;
-    flex-direction: column;
-  }
-  .slide {
-    width: 450px;
-    height: 300px;
-  }
-
-  .menu {
-    display: none;
-  }
-  .logo {
-    position: relative;
-    left: 170px;
-    margin-top: 30px;
-  }
-  /* .slideshow {
-    display: none;
-  } */
-  .text1 {
-    margin: 90px;
-    height: 500px;
-  }
-  .slideshow {
-    height: 300px;
-  }
-  #shop1 {
-    margin-top: 20px;
-  }
-
-  .direction {
-    display: none;
-  }
-  .direction1 {
-    background-color: black;
-    position: relative;
-    top: -75px;
-    left: 320px;
-    display: flex;
-    width: 130px;
-  }
-
-  .section2 {
-    position: relative;
-    /* background-color: pink; */
-    top: 220px;
-    width: 450px;
-  }
-  #imgs {
-    width: 450px;
-    height: 200px;
-  }
-  .text2 {
-    /* width: 420px; */
-    height: 250px;
-  }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  .dropdown-btn {
-    position: relative;
-    top: 30px;
-    left: -90px;
-  }
-  .content {
-    color: rgb(8, 5, 5);
-    display: none;
-    position: abolute;
-    background-color: rgb(253, 254, 255);
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    position: relative;
-    top: -21px;
-    left: -107px;
-  }
-  button {
-    border: none;
-    background-color: unset;
-  }
-  .content ul {
-    color: black;
-    height: 100px;
-    width: 450px;
-    margin: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .content ul a {
-    /* background-color: black; */
-    color: black;
-    font-weight: bold;
-  }
-  .content ul a:hover {
-    text-decoration: none;
-  }
-  .dropdown:hover .content {
-    display: block;
-    margin: 0;
-  }
-  .dropdown:hover .dropdown-btn {
-    background-color: rgb(4, 0, 0);
-    width: 10px;
-  }
 }

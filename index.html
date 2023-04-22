@@ -5,65 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>room-homepage-master</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="icon" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <section class="section1">
-      <div class="img-container">
-        <div class="header">
-          <div class="logo">
-
-            <img src="./images/logo.svg"/>
-          </div>
-          <div class="dropdown">
-                <div class="dropdown-btn">
-                <button>  
-                  <img src="./images/icon-hamburger.svg"/>
-                </button>
-          </div>
-             <div class="content">
-
-            <ul>
-           <li><a href="#"><img src="./images/icon-close.svg"</a></li>
-              <li><a href="#">home</a></li>
-              <li><a href="#">shop</a></li>
-              <li><a href="#">about</a></li>
-              <li><a href="#">contact</a></li>
-            </ul>
-          </div>
-          </div>
-        
-          <div class="menu">
-            <ul>
-              <li><a href="#">home</a></li>
-              <li><a href="#">shop</a></li>
-              <li><a href="#">about</a></li>
-              <li><a href="#">contact</a></li>
-            </ul> 
-          </div>
+        <div id="content" class="content">
+          <ul>
+            <li>
+              <a href="#">
+        <img src="./images/icon-close.svg" onclick="closeNav()"/>
+            </li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
         </div>
-        <div class="slideshow">
+      <div class="header">
+        <div class="head">
+          <div class="dropdown-btn">
+          <button onclick="openNav()">
+            <img src="./images/icon-hamburger.svg" />
+          </button>
+        </div>
+              <div class="logo">
+          <img src="./images/logo.svg" />
+        </div>
+        
+        </div>
+    
+
+
+        <div class="menu">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
           <img
             src="./images/desktop-image-hero-1.jpg"
-            alt="slide1"
+            style="width: 100%"
             class="slide"
-           />  
-  <!-- <img
-            src="/images/mobile-image-hero-1.jpg"
-            alt="slide1"
-            class="slide-"
-           />   -->
-             <div class="direction1">
-              <div class="left">
-          <img src="./images/icon-angle-left.svg" id="arrows" />
+          />
         </div>
-        <div class="right">
-          <img src="./images/icon-angle-right.svg" id="arrows" />
+        <div class="mySlides fade">
+          <img src="./images/desktop-image-hero-2.jpg" style="width: 100%"  class="slide"/>
+        </div>
+        <div class="mySlides fade">
+          <img src="./images/desktop-image-hero-3.jpg" style="width: 100%"  class="slide"/>
+        </div>
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+        <div class="direction1">
+          <div class="left"  onclick="plusSlides(-1)">
+            <img
+              src="./images/icon-angle-left.svg"
+              id="arrows"
+            
+            />
+          </div>
+          <div class="right" onclick="plusSlides(1)">
+            <img
+              src="./images/icon-angle-right.svg"
+              id="arrows"             
+            />
+          </div>
         </div>
       </div>
-      </div> 
-        </div>
-      </div>
+<div class="sect2">
+
       <div class="text1">
         <div id="heading"><h1>Discover innovative ways to decorate</h1></div>
         <div id="middletext">
@@ -79,18 +103,25 @@
           <a href="#" id="shop"
             >SHOP NOW <img src="./images/icon-arrow.svg" id="shop1"
           /></a>
-        </div>
-        <div class="direction">
-          <div class="left">
-            <img src="./images/icon-angle-left.svg" id="arrows" />
-          </div>
-          <div class="right">
-            <img src="./images/icon-angle-right.svg" id="arrows" />
-          </div>
-        </div>
+        </div> 
+       
       </div>
-      
- 
+           <div class="direction">
+          <div class="left" onclick="plusSlides(-1)">
+            <img
+              src="./images/icon-angle-left.svg"
+              id="arrows"
+             
+            />
+          </div>
+          <div class="right"  onclick="plusSlides(1)">
+            <img
+              src="./images/icon-angle-right.svg"
+              id="arrows"
+            
+            />
+          </div>
+        </div></div>
     </section>
 
     <section class="section2">
@@ -100,11 +131,16 @@
       <div class="text2">
         <h2>ABOUT OUR FURNITURE</h2>
         <p>
-     Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.
+          Our multifunctional collection blends design and function to suit your
+          individual taste. Make each room unique, or pick a cohesive theme that
+          best express your interests and what inspires you. Find the furniture
+          pieces you need, from traditional to contemporary styles or anything
+          in between. Product specialists are available to help you create your
+          dream space.
         </p>
       </div>
       <div class="lightimg">
-        <img src="./images/image-about-light.jpg" id="imgs" />
+        <img src="./images/image-about-light.jpg" id="imags" />
       </div>
     </section>
   </body>
